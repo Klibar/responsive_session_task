@@ -62,7 +62,7 @@ class _HomescreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 200.h,
+                        height: 150.h,
                         decoration: BoxDecoration(
                           color: MyColors.mainColor,
                           borderRadius: BorderRadius.only(
@@ -115,7 +115,7 @@ class _HomescreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 150.h,
+                        height: 95.h,
                         decoration: BoxDecoration(
                           color: MyColors.secondColor,
                           borderRadius: BorderRadius.only(
@@ -246,35 +246,60 @@ class _HomescreenState extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(height: 10.h),
-                Row(
-                  children: [
-                    Container(
-                      width: 110.w,
-                      height: 100.h,
-                      decoration: BoxDecoration(
-                        color: MyColors.mainColor,
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(15.r),
-                          topLeft: Radius.circular(15.r),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      decoration: BoxDecoration(),
-                      child: Column(
-                        children: [
-                          Text('Kyoto'),
-                          Text('Japan'),
-                          Row(
-                            children: [
-                              Row(children: [Icon(Icons.star), Text('4.9')]),
-                              Text('\$820'),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+                CityRow(
+                  city: 'Kyoto',
+                  country: 'Japan',
+                  price: 820,
+                  rate: 4.9,
+                  bgColor: MyColors.mainColor,
+                ),
+                SizedBox(height: 15.h),
+                CityRow(
+                  city: 'Bail',
+                  country: 'Indonesia',
+                  price: 640,
+                  rate: 4.8,
+                  bgColor: MyColors.secondColor,
+                ),
+                SizedBox(height: 10.h),
+                CityRow(
+                  city: 'Paris',
+                  country: 'France',
+                  price: 950,
+                  rate: 4.7,
+                  bgColor: Color(0xff388ade),
+                ),
+                SizedBox(height: 10.h),
+                CityRow(
+                  city: 'Maldives',
+                  country: 'Indian Ocean',
+                  price: 1500,
+                  rate: 5,
+                  bgColor: MyColors.mainColor,
+                ),
+                SizedBox(height: 10.h),
+                CityRow(
+                  city: 'Amalfi Coast',
+                  country: 'Italy',
+                  price: 780,
+                  rate: 4.8,
+                  bgColor: Color(0xff388ade),
+                ),
+                SizedBox(height: 10.h),
+                CityRow(
+                  city: 'Iceland',
+                  country: 'Europe',
+                  price: 1100,
+                  rate: 4.9,
+                  bgColor: MyColors.secondColor,
+                ),
+                SizedBox(height: 10.h),
+                CityRow(
+                  city: 'Maldives',
+                  country: 'Indian Ocean',
+                  price: 2400,
+                  rate: 5,
+                  bgColor: MyColors.mainColor,
                 ),
               ],
             ),
