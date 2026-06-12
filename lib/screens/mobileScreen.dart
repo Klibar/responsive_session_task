@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:responcive_task/constants.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class MobileScreen extends StatefulWidget {
+  const MobileScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomescreenState();
+  State<MobileScreen> createState() => _MobileScreenState();
 }
 
-class _HomescreenState extends State<HomeScreen> {
+class _MobileScreenState extends State<MobileScreen> {
   TextEditingController searchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -28,22 +28,28 @@ class _HomescreenState extends State<HomeScreen> {
                         controller: searchController,
                         style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(horizontal: 200),
+                          contentPadding: EdgeInsets.all(10),
                           hintText:
                               ('Search destinations, cities, experiences ... '),
                           hintStyle: TextStyle(
                             color: Color(0xffb8b9b3),
-                            fontSize: 18.sp,
+                            fontSize: 35.sp,
                           ),
-                          prefixIcon: Icon(
-                            Icons.search,
-                            color: Color(0xffb8b9b3),
-                            size: 30.sp,
+                          prefixIcon: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 15),
+                            child: Icon(
+                              Icons.search,
+                              color: Color(0xffb8b9b3),
+                              size: 40.sp,
+                            ),
                           ),
-                          suffixIcon: Icon(
-                            Icons.menu_open_sharp,
-                            size: 30.sp,
-                            color: Color(0xffb8b9b3),
+                          suffixIcon: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 15),
+                            child: Icon(
+                              Icons.menu_open_sharp,
+                              size: 40.sp,
+                              color: Color(0xffb8b9b3),
+                            ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30.r),
@@ -57,12 +63,12 @@ class _HomescreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-                SizedBox(height: 20.h),
+                SizedBox(height: 15.h),
                 Row(
                   children: [
                     Expanded(
                       child: Container(
-                        height: 120.h,
+                        height: 150.h,
                         decoration: BoxDecoration(
                           color: MyColors.mainColor,
                           borderRadius: BorderRadius.only(
@@ -71,13 +77,13 @@ class _HomescreenState extends State<HomeScreen> {
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(25),
+                          padding: const EdgeInsets.all(10),
                           child: Row(
                             crossAxisAlignment: .end,
                             children: [
                               Container(
-                                width: 140.w,
-                                height: 35.h,
+                                width: 150.w,
+                                height: 30.h,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(20.r),
@@ -90,7 +96,7 @@ class _HomescreenState extends State<HomeScreen> {
                                     Icon(
                                       Icons.star,
                                       color: MyColors.secondColor,
-                                      size: 20,
+                                      size: 15,
                                     ),
                                     SizedBox(width: 3.w),
                                     Text(
@@ -115,7 +121,7 @@ class _HomescreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 100.h,
+                        height: 105.h,
                         decoration: BoxDecoration(
                           color: MyColors.secondColor,
                           borderRadius: BorderRadius.only(
@@ -125,8 +131,8 @@ class _HomescreenState extends State<HomeScreen> {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 5,
+                            horizontal: 10,
+                            vertical: 2,
                           ),
                           child: Column(
                             crossAxisAlignment: .start,
@@ -136,7 +142,7 @@ class _HomescreenState extends State<HomeScreen> {
                                 'TOP DESTINATION',
                                 style: TextStyle(
                                   color: MyColors.mainColor,
-                                  fontSize: 18.sp,
+                                  fontSize: 25.sp,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 0.1,
                                 ),
@@ -145,7 +151,7 @@ class _HomescreenState extends State<HomeScreen> {
                                 'Santorini, Greece',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 27.sp,
+                                  fontSize: 35.sp,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 0.1,
                                 ),
@@ -154,7 +160,7 @@ class _HomescreenState extends State<HomeScreen> {
                                 'Cliffside views & iconic sunsets',
                                 style: TextStyle(
                                   color: Colors.white.withOpacity(0.8),
-                                  fontSize: 18.sp,
+                                  fontSize: 25.sp,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 0.1,
                                 ),
@@ -166,7 +172,7 @@ class _HomescreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-                SizedBox(height: 20.h),
+                SizedBox(height: 15.h),
                 Row(
                   mainAxisAlignment: .spaceBetween,
                   children: [
@@ -174,7 +180,7 @@ class _HomescreenState extends State<HomeScreen> {
                       'Categories',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25.sp,
+                        fontSize: 40.sp,
                         letterSpacing: -1,
                         fontWeight: FontWeight.bold,
                       ),
@@ -184,7 +190,7 @@ class _HomescreenState extends State<HomeScreen> {
                       style: TextStyle(
                         color: MyColors.secondColor,
                         letterSpacing: -1,
-                        fontSize: 20.sp,
+                        fontSize: 40.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -196,24 +202,24 @@ class _HomescreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       CategoriesBtn(btnColor: MyColors.mainColor, tilte: 'All'),
-                      SizedBox(width: 20.w),
+                      SizedBox(width: 30.w),
                       CategoriesBtn(
                         btnColor: Color(0xff262624),
                         tilte: 'Beach',
                       ),
-                      SizedBox(width: 20.w),
+                      SizedBox(width: 30.w),
                       CategoriesBtn(
                         btnColor: Color(0xff262624),
                         tilte: 'Mountain',
                       ),
-                      SizedBox(width: 20.w),
+                      SizedBox(width: 30.w),
                       CategoriesBtn(btnColor: Color(0xff262624), tilte: 'City'),
-                      SizedBox(width: 20.w),
+                      SizedBox(width: 30.w),
                       CategoriesBtn(
                         btnColor: Color(0xff262624),
                         tilte: 'Culture',
                       ),
-                      SizedBox(width: 20.w),
+                      SizedBox(width: 30.w),
                       CategoriesBtn(
                         btnColor: Color(0xff262624),
                         tilte: 'Nature',
@@ -229,7 +235,7 @@ class _HomescreenState extends State<HomeScreen> {
                       'Popular',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25.sp,
+                        fontSize: 40.sp,
                         letterSpacing: -1,
                         fontWeight: FontWeight.bold,
                       ),
@@ -239,7 +245,7 @@ class _HomescreenState extends State<HomeScreen> {
                       style: TextStyle(
                         color: MyColors.secondColor,
                         letterSpacing: -1,
-                        fontSize: 20.sp,
+                        fontSize: 40.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
