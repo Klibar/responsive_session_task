@@ -62,7 +62,7 @@ class _HomescreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 150.h,
+                        height: 120.h,
                         decoration: BoxDecoration(
                           color: MyColors.mainColor,
                           borderRadius: BorderRadius.only(
@@ -115,7 +115,7 @@ class _HomescreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 95.h,
+                        height: 100.h,
                         decoration: BoxDecoration(
                           color: MyColors.secondColor,
                           borderRadius: BorderRadius.only(
@@ -125,8 +125,8 @@ class _HomescreenState extends State<HomeScreen> {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 25,
-                            vertical: 20,
+                            horizontal: 20,
+                            vertical: 5,
                           ),
                           child: Column(
                             crossAxisAlignment: .start,
@@ -136,7 +136,7 @@ class _HomescreenState extends State<HomeScreen> {
                                 'TOP DESTINATION',
                                 style: TextStyle(
                                   color: MyColors.mainColor,
-                                  fontSize: 20.sp,
+                                  fontSize: 18.sp,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 0.1,
                                 ),
@@ -145,7 +145,7 @@ class _HomescreenState extends State<HomeScreen> {
                                 'Santorini, Greece',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 31.sp,
+                                  fontSize: 27.sp,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 0.1,
                                 ),
@@ -154,7 +154,7 @@ class _HomescreenState extends State<HomeScreen> {
                                 'Cliffside views & iconic sunsets',
                                 style: TextStyle(
                                   color: Colors.white.withOpacity(0.8),
-                                  fontSize: 20.sp,
+                                  fontSize: 18.sp,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 0.1,
                                 ),

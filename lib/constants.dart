@@ -72,8 +72,9 @@ class CityRow extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 3),
               child: Column(
+                crossAxisAlignment: .start,
                 children: [
                   Text(
                     city,
