@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Responsive Task App',
+          title: 'Responcive Task App',
           home: const ResponsiveLayout(),
         );
       },
