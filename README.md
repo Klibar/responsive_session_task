@@ -1,6 +1,10 @@
 # responcive_task
 
 ![App Demo](assets/app.gif)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 06e6e8cf8466d23c044d301d8957afb0fded1e6b
 A new Flutter project.
 
 ## Getting Started
