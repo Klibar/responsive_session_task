@@ -1,6 +1,6 @@
 # responcive_task
 
-![App Demo](assets\app.gif)
+![App Demo](assets/app.gif)
 
 A new Flutter project.
 
